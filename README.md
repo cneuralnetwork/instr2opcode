@@ -88,7 +88,7 @@ example: jnz 2000h (from your picture)
   - the condition is nz (not zero), so ccc = 000.
   - the action is a conditional jump, so bbb = 010.
 - combine: 11 + 000 + 010 → 11000010
-- convert to hex: 11000010 in binary is c2h. ✅
+- convert to hex: 11000010 in binary is c2h. 
 
 **blueprint 3: data transfer (starts with 01)**
 this is mainly for the mov instruction.
@@ -104,7 +104,7 @@ example: mov b, a
   - the destination register is b, so ddd = 000.
   - the source register is a, so sss = 111.
 - combine: 01 + 000 + 111 → 01000111
-- convert to hex: 01000111 in binary is 47h. ✅
+- convert to hex: 01000111 in binary is 47h. 
 
 **blueprint 4: immediate instructions & more (starts with 00)**
 this group has several variations. your notes highlight the format for mvi (move immediate).
@@ -119,7 +119,7 @@ example: mvi a, 01h
 - lookup code:
   - the destination register is a, so ddd = 111.
 - combine: 00 + 111 + 110 → 00111110
-- convert to hex: 00111110 in binary is 3eh. ✅
+- convert to hex: 00111110 in binary is 3eh. 
 
 ### final assembly: the full machine code
 
