@@ -37,3 +37,4 @@ int handle_hlt_instruction(void);
 int handle_nop_instruction(void);
 
 #endif
+int handle_lda_instruction(char *operands);

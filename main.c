@@ -45,6 +45,8 @@ int main() {
             found = handle_arithmetic_instruction(mnemonic, operands);
         } else if (strcmp(mnemonic, "LXI") == 0) {
             found = handle_lxi_instruction(operands);
+        } else if (strcmp(mnemonic, "LDA") == 0) {
+            found = handle_lda_instruction(operands);
         } else if (strcmp(mnemonic, "INR") == 0) {
             found = handle_inr_instruction(operands);
         } else if (strcmp(mnemonic, "DCR") == 0) {

@@ -177,3 +177,18 @@ int handle_nop_instruction(void) {
     printf("00");
     return 1;
 }
+
+int handle_lda_instruction(char *operands) {
+    // LDA instruction: Load Accumulator Direct
+    // Format: LDA address
+    // Opcode: 3A (00111010)
+    // Followed by 16-bit address (low byte first, high byte second)
+    
+    if (operands && strlen(operands) > 0) {
+        unsigned char opcode = 0x3A;  // 00111010
+        printf("%02X ", opcode);
+        print_16bit_data(operands);
+        return 1;
+    }
+    return 0;
+}

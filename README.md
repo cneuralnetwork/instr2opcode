@@ -72,7 +72,7 @@ example: add c
   - the operation is add, so aaa = 000.
   - the source register is c, so sss = 001.
 - combine: 10 + 000 + 001 → 10000001
-- convert to hex: 10000001 in binary is 81h. ✅
+- convert to hex: 10000001 in binary is 81h. 
 
 **blueprint 2: jumps, calls, & returns (starts with 11)**
 this is for instructions like jnz, cz, rnc, etc.
