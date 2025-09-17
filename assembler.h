@@ -24,6 +24,7 @@ int handle_mov_instruction(char *operands);
 int handle_mvi_instruction(char *operands);
 int handle_arithmetic_instruction(char *mnemonic, char *operands);
 int handle_lxi_instruction(char *operands);
+int handle_lda_instruction(char *operands);
 int handle_inr_instruction(char *operands);
 int handle_dcr_instruction(char *operands);
 int handle_inx_instruction(char *operands);
@@ -37,4 +38,3 @@ int handle_hlt_instruction(void);
 int handle_nop_instruction(void);
 
 #endif
-int handle_lda_instruction(char *operands);
